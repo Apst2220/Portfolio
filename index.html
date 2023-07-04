@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/poppins" type="text/css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <img src="images/background.jpg" class="bg">
+<div id="page-wrap">
+</div>
+    <header class="header">
+        <a href="#home" class="logo" >Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a> 
+        </nav>
+    </header>
+    <button class="go-top-btn">
+        <a href="#home"><img src="images/pic10.jpg" alt=""></a>
+    </button>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Amanpreet Singh</h1>
+            <h3 id="lasth3">And I'm a <span>Frontend Developer!</span></h3>
+            <p>From a football on the field to the lines of code on a web page, I love combining the worlds of logic and creativity to make eye-catching, accessible and user friendly web applications. I am currently based in India with the ability to adapt in both self-starting and collaborative environments while staying focused on achieving high-quality results. </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100016522307655"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/Apst2220"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/amanpreet-singh-4a7ab3252"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://www.instagram.com/amantakkar_26/"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <a href="https://app.luminpdf.com/viewer/64a3f86dda6af3b14731f1c7" class="btn">Download Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="images/Amanpreet.png" alt="" class="imgclass">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-img">
+            <img src="images/Aman3.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">
+                About <span>Me</span></h2>
+                <p>Being a Frontend Developer, I have developed the ability to learn in rapidly changing environments and compositions. I am a technomaniac, always intrigued with new technologies and frameworks. If you're looking for a frontend-developer to add to your team, I'd love to hear from you!</p>
+        <div class="sub-titles">
+            <p class="tab-links active-link" onClick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onClick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onClick="opentab('Education')">Education</p>
+        </div>    
+        <div class="tab-contents active-tab" id="Skills">
+            <ul>
+                <li>C/C++</li>
+                <li>Data Structures and Algorithms</li>
+                <li>MySQL/SQL/Postman</li>
+                <li>Flutter/Dart</li>
+                <li>HTML/CSS/Javasript</li>
+                <li>Bootstrap/Pandas/Python</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Experience">
+            <ul>
+                <li>Sr. Execomm (Devcomm)</li>
+                <li>Managing Director (Rotaract NSIT)</li>
+                <li>NSS (Core Member)</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Education">
+            <ul>
+                <!-- <li>C/C++</li> -->
+                <li>Netaji Subhash University of Technology(BTech in Computer Science) <br>
+                <span>Duration:</span> 2021-2025</li>
+                <li>Central Board of Secondary Education(High School Diploma) <br>
+                    <span>Duration:</span> 2015-2020</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Developement</h3>
+                <br>
+                <p>Currently enhancing frontend skills in languages like    <br>
+                    HTML/CSS/Javascript. I prefer working on Django     <br>
+                    as the backend framework and can be called as a full stack <br>
+                    web developer. Hosting the websites at the <br> end makes
+                    it accessibility easy for user.
+                    </p>
+                    <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+        </div>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-pencil'></i>
+                <h3>Content Writing</h3>
+                <br>
+                <p>As a content writer, I wrote instagram posts during college <br>
+                    society events writing catchy phrases to attract the <br>
+                    audience. Moreover, I wrote letters seeking permission from <br>
+                    college administration for the same.</p>
+                    <br>
+                    <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+        </div>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxs-hourglass-top'></i>
+                <h3>DSA</h3>
+                <br>
+                <p>DSA has become an integral part of my life where usage of   <br>
+                    various data structures like trees, graphs, stack    <br>
+                    queues and their application using arrays and linked lists  <br>
+                    is quiet an interesting ans challenging thing to do.</p>
+                    <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/pic1.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Health-App</h4>
+                    <p>This application shows the data regarding the number of various types of diseases or problems in different parts of the world and there death toll through graphical and visual representations.</p>
+                    <a href="https://github.com/Apst2220/health-care-app.git"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/pic3.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>College-App</h4>
+                    <p>This application include a user interface program for a college application where students can moniter a variety things ranging from there attendence to there results. </p>
+                    <a href="https://github.com/Apst2220/iosd-shortlisting.git"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            </div>
+            </section>
+            <section class="contact" id="contact">
+                <h2 class="heading">Contact <span>Me</span></h2>
+                <form action="#" name="submit-to-google-sheet">
+                    <div class="input-box">
+                        <input type="text" name="First_Name" placeholder="First Name">
+                        <input type="text" name="Last_Name" placeholder="Last Name">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="Mobile" placeholder="Mobile">
+                        <input type="email" name="Email" placeholder="Email Address">
+                    </div>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </section>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbw9uSMObiGu-YVxIPFMOs0fsucBg7PKvDsW1tBb9ByQzWauEnQxS7PB2kfimz4NRfb2Kg/exec'
+                const form = document.forms['submit-to-google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Your message has been sent. Thank you for contacting us!"),
+                                    form.reset()
+                    )
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+            <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
